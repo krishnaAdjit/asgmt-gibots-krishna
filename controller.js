@@ -114,7 +114,7 @@ exports.userReport = (req, res) => {
             if (err) {
                 res.status(500).send({ status: false, message: "Error", errorMessage: err })
             } else {
-                res.render('index', { male: body.body.data.male, female: body.body.data.male })
+                res.render('index', { male: body.body.data.male, female: body.body.data.female })
             }
         })
     } catch (err) {
